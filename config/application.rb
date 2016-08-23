@@ -1,4 +1,4 @@
-require File.expand_path('../boot', __FILE__)
+require_relative 'boot'
 
 require 'rails/all'
 
@@ -12,7 +12,6 @@ module Benchmarkit
       g.helper false
       g.test_framework false
     end
-    config.quiet_assets = false
     config.assets.log = false
   end
 end
